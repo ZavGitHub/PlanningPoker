@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    flex-flow: row;
+}
+.cards {
+    clear: both;
+}
+.participants {    
+    flex: 1;
+    height: 80px;
+}
+.name {    
+    flex: 5;
+}

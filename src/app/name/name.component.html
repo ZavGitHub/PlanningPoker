@@ -1,0 +1,19 @@
+<div *ngIf="isNameHidden">
+    Your name: {{ name.value }}
+</div>
+<div *ngIf="!isNameHidden">
+  <mat-form-field>
+    <mat-label>What's your name?</mat-label>
+    <input matInput [formControl]="name" >
+  </mat-form-field>
+  <button
+    mat-mini-fab
+    color="primary"
+    (click)="submitName()"
+  >
+    <mat-icon>arrow_forward</mat-icon>
+  </button>
+</div>
+<div *ngIf="!isNameHidden">
+  <mat-checkbox (click)="onCheckboxClick()">I want just to watch</mat-checkbox>
+</div>
