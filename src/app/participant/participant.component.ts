@@ -7,7 +7,7 @@ import { Observable, interval } from 'rxjs';
   template: `
     <div>
       <p *ngFor="let participant of participants | async">
-        <button mat-raised-button class="estimation">{{ participant.estimates }}</button>
+        <button mat-raised-button class="estimation">{{ participant.estimate }}</button>
         {{ participant.name }}
       </p>
     </div>

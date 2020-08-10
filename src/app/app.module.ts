@@ -15,13 +15,15 @@ import { CardComponent } from './card/card.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ParticipantComponent } from './participant/participant.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CardListComponent } from './card/card-list/card-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NameComponent,
     CardComponent,
-    ParticipantComponent
+    ParticipantComponent,
+    CardListComponent
   ],
   imports: [
     BrowserModule,
